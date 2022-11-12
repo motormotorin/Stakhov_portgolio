@@ -65,4 +65,5 @@ window.addEventListener('DOMContentLoaded', event => {
 		document.getElementById(id).contentWindow.postMessage(JSON.stringify({ event: 'command', func: 'playVideo' }), '*');
 	}
 	
+	document.cookie = "SameSite=None";
 	
