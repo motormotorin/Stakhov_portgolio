@@ -31,8 +31,7 @@
                         <li class="nav-item"><a class="nav-link" href="#portfolio">Реклама</a></li>
 						<li class="nav-item"><a class="nav-link" href="#wedding">Свадьбы</a></li>
 						<li class="nav-item"><a class="nav-link" href="#reporting">Отчетные видео</a></li>
-						<li class="nav-item"><a class="nav-link" href="#about">Обо мне</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#contact">Как связаться?</a></li>
+						<li class="nav-item"><a class="nav-link" href="#about">Обо мне/Как связаться?</a></li>
                     </ul>
                 </div>
             </div>
@@ -233,7 +232,7 @@
             <div class="container">
                 <div class="text-center">
                     <h2 class="section-heading text-uppercase">lovestory</h2>
-                    <h3 class="section-subheading text-muted">Это видео сдесь для того, чтобы вы в полной мере могли оценить качество съемки. Оно сохранено только в оригинальной версии 1080р</h3>
+                    <h3 class="section-subheading text-muted">А этот фрагмент расположен здесь для того, чтобы вы в полной мере могли оценить качество съемки. Оно сохранено только в оригинальной версии 1080р</h3>
                 </div>
                     <!-- lovestory item 1-->
                     <div class="lovestory-item">
@@ -254,7 +253,7 @@
                     <h3 class="section-subheading text-muted">Живу во Владивостоке, снимаю с удовольствием</h3>
                 </div>
                 <div class="row">
-                    <div class="col-lg-8">
+                    <div class="col-lg-7">
                         <div class="team-member">
                             <img class="mx-auto rounded-circle" src="assets/img/team/1.jpg" alt="..." />
                             <h4>Александр Стахов</h4>
@@ -264,15 +263,43 @@
                             <a class="btn btn-dark btn-social mx-2" href="https://vk.com/sweetassugar" aria-label="Parveen Anand LinkedIn Profile"><i class="fab fa-vk"></i></a>
                         </div>
                     </div>
-                    <div class="col-lg-4">
-                        <div class="team-member">
-                            <h4>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut eaque, laboriosam veritatis, quos non quis ad perspiciatis, totam corporis ea, alias ut unde.</h4>
-                        </div>
-                    </div>
+					<div class="col-lg-4">
+						<form class="row  needs-validation" method="post" action="./php/send.php" novalidate >
+							<div class="team-member">
+								<h4>
+									<div class="mb-3">
+										<label for="exampleFormControlInput1" class="section-heading text-uppercase">Обратная связь</label>
+										<br>
 
+											<label for="validationCustom01" class="form-label">Номер телефона</label>
+											<input class="form-control form-control-lg" name="phone" id="validationCustom01" required placeholder="+7 (XXX) XXXXXXX">
+												<div class="valid-feedback">
+													Здорово
+												</div>
+									</div>
+									<div class="mb-3">
+										<input class="form-control" type="text" placeholder="Имя" name="name" id="validationCustom02" required>
+										<div class="valid-feedback">
+												Класс
+										</div>
+									</div>
+										<div class="mb-3">
+											<input class="form-control" type="text" placeholder="Фамилия" name="lastname" id="validationCustom03" required>
+											<div class="valid-feedback">
+													Приятно познакомиться
+											</div>
+										</div>
+										<div class="d-grid gap-2">
+											<button type="submit" class="btn btn-primary btn-lg">Отправить</button>
+										</div>
+								</h4>
+							</div>
+						</form>
+					</div>
+					
                 </div>
                 <div class="row">
-                    <div class="col-lg-8 mx-auto text-center"><p class="large text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut eaque, laboriosam veritatis, quos non quis ad perspiciatis, totam corporis ea, alias ut unde.</p></div>
+                    <div class="col-lg-8 mx-auto text-center"><p class="large text-muted">Чтобы связаться со мной заполните форму выше, либо просто кликните по иконке интересующей вас соц сети. <br>Все условия обсуждаются лично и индивидуально по каждому проекту. Предпочтительный способ связи: Telegram.</p></div>
                 </div>
             </div>
         </section>
@@ -298,17 +325,16 @@
         <!-- Footer-->
         <footer class="footer py-4">
             <div class="container">
-                <div class="row align-items-center">
-                    <div class="col-lg-4 text-lg-start">Copyright &copy; Your Website 2022</div>
-                    <div class="col-lg-4 my-3 my-lg-0">
+                <div class="row justify-content-md-center">
+                    <div class="col-lg-4 text-lg-start">Copyright &copy; Copiruite сколько нужно</div>
+                    <!--<div class="col-lg-4 my-3 my-lg-0">
                         <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
                         <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
                         <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-                    </div>
+                    </div> -->
                     <div class="col-lg-4 text-lg-end">
-                        <a class="link-dark text-decoration-none me-3" href="#!">Privacy Policy</a>
-                        <a class="link-dark text-decoration-none" href="#!">Terms of Use</a>
-                    </div>
+                        <a class="link-dark text-decoration-none me-3" href="https://t.me/megan_q">Нужен такой же сайт?</a>
+                    </div> 
                 </div>
             </div>
         </footer>
@@ -710,5 +736,6 @@
         <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
         <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
         <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+		<script src="./php/send.php" type="php"></script>
     </body>
 </html>
