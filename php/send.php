@@ -4,7 +4,7 @@
 $token = "5747834724:AAFUj0woQit-w3NZo7iFxyLJZkVGhE_ub9M";
 
 //Сюда вставляем chat_id
-$chat_id = "-836418200";
+$chat_id = "-1001883181197";
 
 //Определяем переменные для передачи данных из нашей формы
 if ($_POST['act'] == 'order') {
@@ -29,12 +29,12 @@ if ($_POST['act'] == 'order') {
 
 //Выводим сообщение об успешной отправке
     if ($sendToTelegram) {
-        alert('Спасибо! Ваша заявка принята. Мы свяжемся с вами в ближайшее время.');
+        header("Location: http://stahovfilm.ru/ThankYou.html");
     }
 
 //А здесь сообщение об ошибке при отправке
     else {
-        alert('Что-то пошло не так. ПОпробуйте отправить форму ещё раз.');
+      header("Location: http://stahovfilm.ru/Error.html");
     }
 }
 
